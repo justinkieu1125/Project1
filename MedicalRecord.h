@@ -31,6 +31,11 @@ public:
 				// cout << name << " " << weight << endl;
 				Baby b(name, weight);
 				addEntry(b);
+
+				if (weight < 2500)
+				{
+					lowestweight++;
+				}
 			}
 			myfile.close();
 		}
